@@ -6,7 +6,7 @@ replicaCount: 3
 
 
 image:
-  repository: 42069789/oncall2teams:latest
+  repository: 42069789/oncall2teams
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
