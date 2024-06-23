@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-oncall2teams
+  labels:
+    app: {{ .Release.Name }}-oncall2teams
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-oncall2teams
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-oncall2teams
+    spec:
+      containers:
+      - name: oncall2teams
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+          - name: oncall2teams
+            mountPath: /app
+      volumes:
+        - name: oncall2teams
+          configMap:
+            name: oncall2teams

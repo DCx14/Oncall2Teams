@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: oncall2teams
+data:
+  index.php: |-
+{{ .Files.Get "conf/index.php" | indent 4 }}
