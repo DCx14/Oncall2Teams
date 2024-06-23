@@ -4,7 +4,7 @@
 ## Description:
 
 Contexte et Problématique
-Les systèmes de monitoring comme Prometheus, intégrés à Grafana OnCall, génèrent des alertes précieuses pour la gestion proactive des infrastructures informatiques. Toutefois, ces alertes ne sont pas toujours formatées pour être directement relayées vers la plateformes de collaboration Microsoft Teams. Pour remédier à cela, oncall2teams permet de recevoir les webhooks de Grafana OnCall, de les transformer au bon format, et de les envoyer vers Microsoft Teams, assurant ainsi une communication claire et efficace des alertes.
+Les systèmes de monitoring comme Alertmanager, intégrés à Grafana OnCall, génèrent des alertes précieuses pour la gestion proactive des infrastructures informatiques. Toutefois, ces alertes ne sont pas toujours formatées pour être directement relayées vers la plateformes de collaboration Microsoft Teams. Pour remédier à cela, oncall2teams permet de recevoir les webhooks de Grafana OnCall, de les transformer au bon format, et de les envoyer vers Microsoft Teams, assurant ainsi une communication claire et efficace des alertes.
 
 Réception des Webhooks :
 
@@ -25,8 +25,13 @@ docker run -d  -p 8989:80 oncall2teams
 Ou directement depuis dockerhub
 
 ```shell
-docker run --name oncall2teams -d 42069789/oncall2teams:latest
+docker run --name oncall2teams -d 42069789/oncall2teams:latest -p 80:80
 ```
 
 ## Installation pour kubernetes
+
+```shell
+git clone https://github.com/DCx14/Oncall2Teams.git
+helm install -f values.yaml  oncall2teams ../Helm/ -n monitoring
+```
 
