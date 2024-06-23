@@ -25,7 +25,7 @@ docker run -d  -p 8989:80 oncall2teams
 Ou directement depuis dockerhub
 
 ```shell
-docker run --name oncall2teams -d 42069789/oncall2teams:latest -p 80:80
+docker run --name oncall2teams  -p 80:80 -d 42069789/oncall2teams:latest 
 ```
 
 ## Installation pour kubernetes
