@@ -34,4 +34,19 @@ docker run --name oncall2teams  -p 80:80 -d 42069789/oncall2teams:latest
 git clone https://github.com/DCx14/Oncall2Teams.git
 helm install -f values.yaml  oncall2teams ../Helm/ -n monitoring
 ```
+## Fonctionnement
+
+COnfigurer votre Webhook sur Oncall avec pour destination oncall2teams.
+Dans la partie "Webhook Headers" coller l'URL du Webhook du canal Teams en format JSON
+
+exemple : 
+
+```shell
+{
+  "webhook-url": "https://zob.webhook.office.com/webhookb2/767ddadb-b3454-437e-ba9c-aa986c0c92f7@9ced4109-6732-4295-8d3f-n678-371aae263/IncomingWebhook/b1ffd782etf3dh896dfc41ff1c46b7/3F0f5705-7864-443c-8c8c-b2a4855d27cf"
+}
+```
+
+
+
 
