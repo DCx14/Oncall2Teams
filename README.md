@@ -1,7 +1,7 @@
-<h1 align="center">
+<h1>
   Oncall2Teams 
 </h1>
-<p align="center">
+<p>
     Forwarder les alertes de alertemanager via teams depuis Grafana Oncall
     <br/>
 
