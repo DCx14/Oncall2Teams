@@ -5,7 +5,6 @@
     Forwarder les alertes de alertemanager via teams depuis Grafana Oncall
     <br/>
 </p>
-<br/>
 
 ## Description:
 
