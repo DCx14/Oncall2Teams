@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: oncall2teams
 data:
-  index.php: |-
-{{ .Files.Get "conf/index.php" | indent 4 }}
+  receiver.php: |-
+{{ .Files.Get "conf/receiver.php" | indent 4 }}
