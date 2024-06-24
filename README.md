@@ -58,9 +58,14 @@ exemple :
 
 ![exemple oncall](https://i.imgur.com/A6uZR16.png)]()
 
-Maintenant vous pouvez reçevoir les alertes de alertmanager par le bias de Oncall.
+Maintenant vous pouvez reçevoir les alertes.
 
 
 ## Demo
 
+Info: 
+https://i.imgur.com/Xk9fxCh.png
+![](https://i.imgur.com/Xk9fxCh.png)
+![](https://i.imgur.com/g8nJTkA.png)
+![](https://i.imgur.com/oLrqStL.png)
 
