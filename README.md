@@ -47,4 +47,4 @@ exemple :
 }
 ```
 
-![exemple oncall](https://i.imgur.com/A6uZR16.png)](https://i.imgur.com/A6uZR16.png)
+![exemple oncall](https://i.imgur.com/A6uZR16.png)]()
