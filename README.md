@@ -47,4 +47,4 @@ exemple :
 }
 ```
 
-[![name](link to image on GH)](https://imgur.com/a/rY6T8Uj)
+[![name](link to image on GH)](https://i.imgur.com/A6uZR16.png)
