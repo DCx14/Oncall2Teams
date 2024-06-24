@@ -56,10 +56,9 @@ exemple :
 }
 ```
 
-![exemple oncall](https://i.imgur.com/A6uZR16.png)]()
+![](https://i.imgur.com/A6uZR16.png)
 
-Maintenant vous pouvez reçevoir les alertes.
-
+Maintenant vous pouvez reçevoir les alertes de Alertmanager.
 
 ## Demo
 
