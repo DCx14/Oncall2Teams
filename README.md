@@ -4,11 +4,12 @@
 <p align="center">
     Forwarder les alertes de alertemanager via teams depuis Grafana Oncall
     <br/>
+  ![](https://i.imgur.com/LWrLXMW.png)]()
 </p>
 
 <br/>
 
-![exemple oncall](https://i.imgur.com/LWrLXMW.png)]()
+
 
 <br/>
 
