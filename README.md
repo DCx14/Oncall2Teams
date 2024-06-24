@@ -63,9 +63,10 @@ Maintenant vous pouvez reçevoir les alertes.
 
 ## Demo
 
-Info: 
-https://i.imgur.com/Xk9fxCh.png
+
 ![](https://i.imgur.com/Xk9fxCh.png)
+
 ![](https://i.imgur.com/g8nJTkA.png)
+
 ![](https://i.imgur.com/oLrqStL.png)
 
