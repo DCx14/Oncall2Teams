@@ -8,6 +8,7 @@ date_default_timezone_set('Europe/Paris');
 $entityBody = file_get_contents('php://input');
 $headers = getallheaders();
 
+
 // json encode/decode
 $str_json = json_encode($entityBody,JSON_FORCE_OBJECT);
 $my_array = json_decode($entityBody,true);
@@ -22,13 +23,16 @@ if (json_last_error()) {
 
 //get metric in webhook
 
+
+
 $severity = $my_array['alert_payload']['alerts'][0]['labels']['severity'];
 $alertname = $my_array['alert_payload']['alerts'][0]['labels']['alertname'];
 $status = $my_array['alert_payload']['alerts'][0]['status']; 
 $Description = $my_array['alert_payload']['alerts'][0]['annotations']['description'];
 $UrlAlert = $my_array['alert_group']['permalinks']['web'];
 $Annotations = $my_array['alert_payload']['alerts'][0]['annotations'];
-$WebhookDest = $headers['Webhook_url'] ; // Get URL destination
+$WebhookDest = $headers['Webhook-Url'] ; // Get URL destination
+
 
 // function for tranform json
 
@@ -54,18 +58,19 @@ if ($severity === "critical")
 
 }elseif ($severity === "warning")
 {
-    $images = 'https://www.clipartmax.com/png/small/150-1504575_warning-icon-pn-warning-icon-png-yellow.png';
+    $images = 'https://cdn4.iconfinder.com/data/icons/set-1/32/__23-256.png';
     $color = '#E06C10';
 }elseif  ($severity === "info")
 {
-    $images = 'https://www.clipartmax.com/png/small/67-677798_new-starter-parents-meeting-info.png';
+    $images = 'https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678110-sign-info-256.png';
     $color = '#1D6BE0';
 
+}else{
+
+    $images = 'https://cdn1.iconfinder.com/data/icons/web-illustration-1/132/48-256.png';
+    $color = '#000000';
 }
 
-
-
-$test = json_encode( $commonLabels, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
 
 $data = [
             '@type'      => 'MessageCard',
@@ -76,7 +81,7 @@ $data = [
             'sections'   => [
                 [
                     'activityTitle'    => $status,
-                    'activitySubtitle' => utf8_encode(strftime('%A %d %B %Y, %H:%M')),
+                    'activitySubtitle' => date('Y-m-d H:i:s'),
                     'activityImage'    => $images,
                     'facts'            => [
                         [
@@ -125,8 +130,7 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 
 $response = curl_exec( $ch );
 // If you need to debug, or find out why you can't send message uncomment line below, and execute script.
-// echo $response;
+echo $response;
 curl_close( $ch );
 
 ?>
-
