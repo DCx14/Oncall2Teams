@@ -46,6 +46,8 @@ helm install -f values.yaml  oncall2teams ../Helm/ -n monitoring
 ## Fonctionnement
 
 Configurer votre Webhook sur Oncall avec pour destination oncall2teams.
+URL Webhooks: http://MONDOMAINE/receiver.php
+
 Dans la partie "Webhook Headers" coller l'URL du Webhook du canal Teams en format JSON
 
 exemple : 
