@@ -13,7 +13,7 @@
 
 ## Description:
 
-![](https://i.imgur.com/LWrLXMW.png)]()
+![](https://i.imgur.com/LWrLXMW.png)
 
 <br/>
 
