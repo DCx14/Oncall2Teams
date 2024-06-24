@@ -8,7 +8,7 @@
 
 <br/>
 
-![exemple oncall]([https://i.imgur.com/A6uZR16.png](https://i.imgur.com/LWrLXMW.png))]()
+![exemple oncall](https://i.imgur.com/LWrLXMW.png)]()
 
 <br/>
 
