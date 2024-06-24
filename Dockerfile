@@ -4,7 +4,7 @@ RUN install-php-extensions \
  opcache \
  curl
 
-COPY index.php /app/
+COPY receiver.php /app/
 #ENV FRANKENPHP_CONFIG="worker ./public/receiver.php"
 
 EXPOSE 80
