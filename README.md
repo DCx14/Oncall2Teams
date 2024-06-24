@@ -46,4 +46,5 @@ exemple :
   "webhook-url": "https://zob.webhook.office.com/webhookb2/767ddadb-b3454-437e-ba9c-aa986c0c92f7@9ced4109-6732-4295-8d3f-n678-371aae263/IncomingWebhook/b1ffd782etf3dh896dfc41ff1c46b7/3F0f5705-7864-443c-8c8c-b2a4855d27cf"
 }
 ```
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/rY6T8Uj" data-context="false" ><a href="//imgur.com/a/rY6T8Uj"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+[![name](link to image on GH)](https://imgur.com/a/rY6T8Uj)
