@@ -1,4 +1,10 @@
-# Oncall2Teams
+<h1 align="center">
+  Oncall2Teams 
+</h1>
+<p align="center">
+    Forwarder les alertes de alertemanager via teams depuis Grafana Oncall
+    <br/>
+</p>
 
 
 ## Description:
@@ -36,7 +42,7 @@ helm install -f values.yaml  oncall2teams ../Helm/ -n monitoring
 ```
 ## Fonctionnement
 
-COnfigurer votre Webhook sur Oncall avec pour destination oncall2teams.
+Configurer votre Webhook sur Oncall avec pour destination oncall2teams.
 Dans la partie "Webhook Headers" coller l'URL du Webhook du canal Teams en format JSON
 
 exemple : 
@@ -48,3 +54,8 @@ exemple :
 ```
 
 ![exemple oncall](https://i.imgur.com/A6uZR16.png)]()
+
+Maintenant vous pouvez reçevoir les alertes de alertmanager par le bias de Oncall.
+
+
+## 
