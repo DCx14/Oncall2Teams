@@ -1,4 +1,4 @@
-Attention, update pour du receiver.php pour fonctionner avec le systeme de workflow teams.
+Attention, update du fichier receiver.php pour qu'il fonctionne avec le systeme de workflow teams.
 
 <h1>
   Oncall2Teams 
