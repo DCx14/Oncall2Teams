@@ -1,3 +1,5 @@
+Attention, update pour du receiver.php pour fonctionner avec le systeme de workflow teams.
+
 <h1>
   Oncall2Teams 
 </h1>
