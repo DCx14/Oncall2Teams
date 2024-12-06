@@ -38,24 +38,16 @@ $Namespaces = $my_array['alert_payload']['alerts'][0]['labels']['namespace'];
 $Pod = $my_array['alert_payload']['alerts'][0]['labels']['pod'];
 
 
-$event = $my_array['event']['type'];
-
+$event = $my_array['event']['alerts'][0]['labels']['severity'];
 
 if (!$Pod){
-  $Pod ="N/A";  
+  $Pod ="N/A";
 }
 if (!$Namespaces){
   $Namespaces = "N/A";
 }
-#if ($status){
-#  $status = $status . " " ."🚨";
-#}
-
-if ($event == "resolve"){
-    $status = "Résolu" . " " ."✅";
-    $severity = "resolu";
-}else{
-    $status = $status . " " ."🚨";
+if ($status){
+  $status = $status . " " ."🚨";
 }
 
 $facts = [
@@ -112,15 +104,7 @@ if ($severity === "critical")
     $color = '#1D6BE0';
     $style = "emphasis";
   
-}elseif  ($severity === "resolu")
-{
-    $images = 'https://cdn1.iconfinder.com/data/icons/color-bold-style/21/34-512.png';
-    $color = '#21FA01';
-    $style = "emphasis";
-  
-}
-
-else{
+}else{
 
     $images = 'https://cdn1.iconfinder.com/data/icons/web-illustration-1/132/48-256.png';
     $color = '#000000';
